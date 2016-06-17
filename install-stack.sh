@@ -9,10 +9,12 @@ serverfolder="server"
 git clone $clientrepo" "$clientfolder
 git clone $serverrepo" "$serverfolder
 
-cd $clientrepo
+cd $clientfolder
 npm install && bower install
-cd..
+cd ..
 
-cd $serverrepo
+cd $serverfolder
 npm install
-cd..
+cd ..
+
+npm install
